@@ -1,17 +1,21 @@
 {
-  "name": "my-portfolio",
+  "name": "sample-react-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://isqbellq.github.io/sample-react-app",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject"    
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +25,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
