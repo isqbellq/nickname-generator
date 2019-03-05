@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Currency from "./Currency";
-import CurrencySwitcher from "./CurrencySwitcher";
 
 class Converter extends Component {
 	constructor(props) {
@@ -22,6 +20,27 @@ class Converter extends Component {
 			    <Currency currency={this.state.currency} />
 			    <CurrencySwitcher currency={this.state.currency} handleChangeCurrency={this.handleChangeCurrency} />
 			</div>
+		);
+	}
+}
+
+class Currency extends Component {
+	render() {
+		return (
+			<p>The current currency is: {this.props.currency} !</p>
+		);
+	}
+}
+
+
+class CurrencySwitcher extends Component {
+	render() {
+		return (
+			<button 
+			currency={this.props.currency} 
+			onClick={this.props.handleChangeCurrency}> 
+			Click to change currency.
+			</button>
 		);
 	}
 }

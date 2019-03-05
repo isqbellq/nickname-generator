@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import Hello from "./Hello";
-import World from "./World";
 
 class HelloWorld extends Component {
-
 	render() {
 
 		return (
@@ -11,6 +8,22 @@ class HelloWorld extends Component {
 			    <Hello />
 			    <World />
 			</div>
+		);
+	}
+}
+
+class Hello extends Component {
+	render() {
+		return (
+			<h1>Hello!</h1>
+		);
+	}
+}
+
+class World extends Component {
+	render() {
+		return (
+			<h1 onClick={() => this.props.sayHi()}>World!</h1>
 		);
 	}
 }

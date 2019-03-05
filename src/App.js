@@ -4,6 +4,7 @@ import CurrentDate from "./components/Date";
 import HelloWorld from "./components/HelloWorld";
 import Alert from "./components/Alert";
 import Converter from "./components/Converter";
+import Form from "./components/Form";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <HelloWorld />
           <Alert />
           <Converter />
+          <Form />
       </div>
     );
   }
