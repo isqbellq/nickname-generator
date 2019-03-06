@@ -14,7 +14,7 @@ class Form extends Component {
 			username: event.target.value
 		});
 	}
-
+	
 	handleSubmit = event => {
 		alert(this.state.username);
 		alert(this.file.current.files[0].name);
