@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 class GetActivity extends Component {
+    constructor(props) {
+    	super(props);
+    }
 
 	render() {
 		return (
@@ -20,6 +23,7 @@ class GetActivity extends Component {
 			    <input
 			    type="submit"
 			    value="Submit"
+			    onClick={this.props.handleSubmit}
 			    />
 			</form>
 		);

@@ -13,6 +13,10 @@ class App extends Component {
     }
   }
 
+  handleSubmit = () => {
+    alert("idk");
+  }
+
   render() {
     return (
       <div className="App">
@@ -21,6 +25,7 @@ class App extends Component {
           start={this.state.start}
           end={this.state.end}
           activities={this.state.activities} 
+          handleSubmit={this.handleSubmit}
           />
           <Activities />
       </div>
