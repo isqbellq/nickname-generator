@@ -1,31 +1,13 @@
 import React, { Component } from "react";
 
-class HelloWorld extends Component {
+class Activities extends Component {
 	render() {
 
 		return (
-			<div className="helloworld">
-			    <Hello />
-			    <World />
-			</div>
+			<ul className="Activities">
+			</ul>
 		);
 	}
 }
 
-class Hello extends Component {
-	render() {
-		return (
-			<h1>Hello!</h1>
-		);
-	}
-}
-
-class World extends Component {
-	render() {
-		return (
-			<h1 onClick={() => this.props.sayHi()}>World!</h1>
-		);
-	}
-}
-
-export default HelloWorld;
+export default Activities;
