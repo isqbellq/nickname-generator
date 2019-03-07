@@ -33,7 +33,11 @@ class App extends Component {
           activities={this.state.activities} 
           handleSubmit={this.handleSubmit}
           />
-          <Activities />
+          <Activities 
+          start={this.state.start}
+          end={this.state.end}
+          activities={this.state.activities} 
+          />
       </div>
     );
   }
