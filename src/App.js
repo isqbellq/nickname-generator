@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import GetActivity from "./components/GetActivity";
+import Activities from "./components/Activities";
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
           <h1>Time tracker</h1>
           <GetActivity />
+          <Activities />
       </div>
     );
   }
