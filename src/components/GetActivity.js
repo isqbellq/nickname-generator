@@ -9,14 +9,17 @@ class GetActivity extends Component {
 		return (
 			<form>
 			    <input 
+			    id="start"
 			    type="text"
 			    placeholder="Start"
 			    />
-			    <input
+			    <input 
+			    id="end"
 			    type="text"
 			    placeholder="End"
 			    />
 			    <input
+			    id="activity"
 			    type="text"
 			    placeholder="Activity"
 			    />

@@ -13,8 +13,14 @@ class App extends Component {
     }
   }
 
-  handleSubmit = () => {
+  handleSubmit = (e) => {
     alert("idk");
+    this.setState({
+      start: "test start",
+      end: "test end",
+      activities: ["hmmm", "test"]
+    });
+    e.preventDefault();
   }
 
   render() {
