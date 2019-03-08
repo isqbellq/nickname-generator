@@ -21,10 +21,6 @@ class App extends Component {
     e.preventDefault();
   }
 
-  addActivity = (activity) => {
-
-  }
-
   render() {
     return (
       <div className="App">
