@@ -7,8 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      start: "",
-      end: "",
+      duration: [],
       activities: []
     }
   }
@@ -16,11 +15,14 @@ class App extends Component {
   handleSubmit = (e) => {
     alert("idk");
     this.setState({
-      start: "test start",
-      end: "test end",
+      duration: [40, 56],
       activities: ["hmmm", "test"]
     });
     e.preventDefault();
+  }
+
+  addActivity = (activity) => {
+
   }
 
   render() {
