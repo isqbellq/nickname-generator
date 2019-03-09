@@ -7,18 +7,18 @@ class GetActivity extends Component {
 		return (
 			<form>
 			    <input 
-			    id="start"
 			    type="text"
+			    value={this.props.start}
 			    placeholder="Start"
 			    />
 			    <input 
-			    id="end"
 			    type="text"
+			    value={this.props.end}
 			    placeholder="End"
 			    />
 			    <input
-			    id="activity"
 			    type="text"
+			    value={this.props.activity}
 			    placeholder="Activity"
 			    />
 			    <input
