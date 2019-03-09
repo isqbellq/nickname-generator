@@ -32,8 +32,7 @@ class App extends Component {
           handleSubmit={this.handleSubmit}
           />
           <Activities 
-          start={this.state.start}
-          end={this.state.end}
+          duration={this.state.duration}
           activities={this.state.activities} 
           />
       </div>

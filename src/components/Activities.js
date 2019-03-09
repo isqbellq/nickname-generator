@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Activity from "./components/Activity";
+import Activity from "./Activity";
 
 const Activities = props => {
     return (
-		<div>
+		<ul>
 	       {props.activities.map(activity => (
 	       	<Activity {...activity} />
 	       	))}
-		</div>
+		</ul>
 	);
 }
 
