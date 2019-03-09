@@ -3,11 +3,11 @@ import Activity from "./Activity";
 
 const Activities = props => {
     return (
-		<ul>
+		<div>
 	       {props.activities.map(activity => (
-	       	<Activity {...activity} />
+	       	<Activity key={activity} {...activity} />
 	       	))}
-		</ul>
+		</div>
 	);
 }
 

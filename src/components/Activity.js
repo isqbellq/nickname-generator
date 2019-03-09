@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const Activity = props => {
 	return (
-		<li>{props.duration}, {props.activity}</li>
+		<div>{props.duration}, {props.activities}</div>
 	);
 }
 

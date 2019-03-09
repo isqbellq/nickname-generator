@@ -13,7 +13,6 @@ class App extends Component {
   }
 
   handleSubmit = (e) => {
-    alert("idk");
     this.setState({
       duration: [40, 56],
       activities: ["hmmm", "test"]
@@ -26,8 +25,7 @@ class App extends Component {
       <div className="App">
           <h1>Time tracker</h1>
           <GetActivity 
-          start={this.state.start}
-          end={this.state.end}
+          duration={this.state.duration}
           activities={this.state.activities} 
           handleSubmit={this.handleSubmit}
           />
