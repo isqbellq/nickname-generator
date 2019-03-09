@@ -1,30 +1,35 @@
 import React, { Component } from "react";
 
 class GetActivity extends Component {
-
+ 
 	render() {
-
 		return (
-			<form>
+			<form
+			    onSubmit={this.props.handleSubmit}>
 			    <input 
-			    type="text"
-			    value={this.props.start}
-			    placeholder="Start"
+			        type="text"
+			        value={this.props.start}
+			        placeholder="Start"
+			        onChange={event => alert(event.target.value)}
+			        required
 			    />
 			    <input 
-			    type="text"
-			    value={this.props.end}
-			    placeholder="End"
+			        type="text"
+			        value={this.props.end}
+			        placeholder="End"
+			        onChange={event => alert(event.target.value)}
+			        required
 			    />
 			    <input
-			    type="text"
-			    value={this.props.activity}
-			    placeholder="Activity"
+			        type="text"
+			        value={this.props.activity}
+			        placeholder="Activity"
+			        onChange={event => alert(event.target.value)}
+			        required
 			    />
 			    <input
-			    type="submit"
-			    value="Submit"
-			    onClick={this.props.handleSubmit}
+			        type="submit"
+			        value="Submit"
 			    />
 			</form>
 		);
