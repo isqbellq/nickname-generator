@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 
 class GetActivity extends Component {
- 
+    constructor(props) {
+    	super(props);
+    	this.state = {
+    		x: ""
+    	}
+    }
 	render() {
 		return (
 			<form
@@ -10,7 +15,7 @@ class GetActivity extends Component {
 			        type="text"
 			        value={this.props.start}
 			        placeholder="Start"
-			        onChange={event => alert(event.target.value)}
+			        onChange={event => this.setState({x: event.target.value})}
 			        required
 			    />
 			    <input 
