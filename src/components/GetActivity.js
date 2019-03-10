@@ -17,21 +17,21 @@ class GetActivity extends Component {
 			        type="text"
 			        value={this.props.start}
 			        placeholder="Start"
-			        onChange={event => this.setState({start: event.target.value})}
+			        onChange={e => this.setState({start: e.target.value})}
 			        required
 			    />
 			    <input 
 			        type="text"
 			        value={this.props.end}
 			        placeholder="End"
-			        onChange={event => this.setState({end: event.target.value})}
+			        onChange={e => this.setState({end: e.target.value})}
 			        required
 			    />
 			    <input
 			        type="text"
 			        value={this.props.activity}
 			        placeholder="Activity"
-			        onChange={event => this.setState({activity: event.target.value})}
+			        onChange={e => this.setState({activity: e.target.value})}
 			        required
 			    />
 			    <input

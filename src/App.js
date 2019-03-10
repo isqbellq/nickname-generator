@@ -7,16 +7,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      duration: [],
-      activities: []
+      duration: [23, 34],
+      activities: ["boh", "ok"]
     }
   }
 
   handleSubmit = (e) => {
     this.setState({
-      duration: [40, 56],
-      activities: ["hmmm", "test"]
-    });
+      duration: [45, 55],
+      activities: ["hmm", "k"]
+      });
     e.preventDefault();
   }
 
