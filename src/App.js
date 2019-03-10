@@ -25,13 +25,11 @@ class App extends Component {
       <div className="App">
           <h1>Time tracker</h1>
           <GetActivity 
-          duration={this.state.duration}
-          activities={this.state.activities} 
-          handleSubmit={this.handleSubmit}
+            handleSubmit={this.handleSubmit}
           />
           <Activities 
-          duration={this.state.duration}
-          activities={this.state.activities} 
+            duration={this.state.duration}
+            activities={this.state.activities} 
           />
       </div>
     );
