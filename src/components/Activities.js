@@ -3,7 +3,7 @@ import Activity from "./Activity";
 
 const Activities = props => {
     return (
-		<div>
+		<div className="activities">
 	       {props.activities.map(activity => (
 	       	<Activity key={activity} {...activity} />
 	       	))}
