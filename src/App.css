@@ -52,7 +52,7 @@ body {
     align-items: center;
     border: 1px solid #efefef;
     box-shadow:
-    /* The top layer shadow */
+        /* The top layer shadow */
         0 1px 1px rgba(0,0,0,0.15),
             /* The second layer */
         0 10px 0 -5px #eee,
@@ -69,7 +69,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 20px 0;
+    padding: 8px 20px;
     width: 70%;
     border-bottom: 1px solid #cecece;
     font-family: Roboto, sans-serif;

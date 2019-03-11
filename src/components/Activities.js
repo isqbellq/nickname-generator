@@ -5,7 +5,11 @@ const Activities = props => {
     return (
 		<div className="activities">
 	       {props.activities.map(activity => (
-	       	<Activity key={activity} {...activity} />
+	       	<Activity 
+	       	    duration={props.duration}
+	       	    activities={props.activities}
+	       	    key={activity}
+	       	/>
 	       	))}
 		</div>
 	);
