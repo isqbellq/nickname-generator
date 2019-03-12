@@ -5,8 +5,9 @@ const Activities = props => {
     return (
 		<div className="activities">
 	       {props.activities.map(activity => (
+
 	       	<Activity 
-	       	    duration={props.duration}
+	       	    duration={props.activity.duration}
 	       	    activities={props.activities}
 	       	    key={activity}
 	       	/>

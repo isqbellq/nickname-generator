@@ -4,7 +4,7 @@ const Activity = props => {
 	return (
 		<div className="activity">
 		    <input type="checkbox" />
-        	<p>{props.duration}, {props.activities}</p>
+        	<p>Duration: {props.duration}. Activity: {props.activities}.</p>
         </div>
 	);
 }
