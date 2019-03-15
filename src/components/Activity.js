@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 
 const Activity = props => {
+
+	const style = {
+		fontStyle: "italic",
+	}
 	return (
 		<div className="activity">
-            <li style={{fontStyle: "italic"}}>Duration: {props.duration}. Activity: {props.activity}.</li>
+            <li style={style}>Duration: {props.duration}. Activity: {props.activity}.</li>
         </div>
 	);
 }
