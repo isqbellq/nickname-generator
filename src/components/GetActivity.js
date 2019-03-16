@@ -12,7 +12,7 @@ class GetActivity extends Component {
 
     handleSubmit = (e) => {
     	this.setState({
-    		start: e.target.value
+    		[e.target.name]: e.target.value
     	});
     }
 
@@ -29,12 +29,14 @@ class GetActivity extends Component {
 			    />
 			    <input 
 			        type="text"
+			        name="end"
 			        placeholder="End"
 			        onChange={this.handleSubmit}
 			        required
 			    />
 			    <input
 			        type="text"
+			        name="activity"
 			        placeholder="Activity"
 			        onChange={this.handleSubmit}
 			        required
