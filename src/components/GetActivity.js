@@ -9,29 +9,34 @@ class GetActivity extends Component {
     		activity: ""
     	}
     }
+
+    handleSubmit = (e) => {
+    	this.setState({
+    		start: e.target.value
+    	});
+    }
+
 	render() {
 		return (
 			<form
 			    onSubmit={this.props.handleSubmit}>
 			    <input 
 			        type="text"
-			        value={this.props.start}
+			        name="start"
 			        placeholder="Start"
-			        onChange={e => this.setState({start: e.target.value})}
+			        onChange={this.handleSubmit}
 			        required
 			    />
 			    <input 
 			        type="text"
-			        value={this.props.end}
 			        placeholder="End"
-			        onChange={e => this.setState({end: e.target.value})}
+			        onChange={this.handleSubmit}
 			        required
 			    />
 			    <input
 			        type="text"
-			        value={this.props.activity}
 			        placeholder="Activity"
-			        onChange={e => this.setState({activity: e.target.value})}
+			        onChange={this.handleSubmit}
 			        required
 			    />
 			    <input
