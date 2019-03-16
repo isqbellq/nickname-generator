@@ -10,9 +10,10 @@ class GetActivity extends Component {
     	}
     }
 
-    handleSubmit = (e) => {
+    handleChange = (e) => {
+    	const { name, value } = e.target;
     	this.setState({
-    		[e.target.name]: e.target.value
+    		[name]: value
     	});
     }
 
@@ -24,21 +25,24 @@ class GetActivity extends Component {
 			        type="text"
 			        name="start"
 			        placeholder="Start"
-			        onChange={this.handleSubmit}
+			        value={this.state.start} 
+			        onChange={this.handleChange}
 			        required
 			    />
 			    <input 
 			        type="text"
 			        name="end"
 			        placeholder="End"
-			        onChange={this.handleSubmit}
+			        value={this.state.end} 
+			        onChange={this.handleChange}
 			        required
 			    />
 			    <input
 			        type="text"
 			        name="activity"
 			        placeholder="Activity"
-			        onChange={this.handleSubmit}
+			        value={this.state.activity} 
+			        onChange={this.handleChange}
 			        required
 			    />
 			    <input
