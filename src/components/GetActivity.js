@@ -45,10 +45,7 @@ class GetActivity extends Component {
 			        onChange={this.handleChange}
 			        required
 			    />
-			    <input
-			        type="submit"
-			        value="Submit"
-			    />
+			    <button>Submit</button>
 			</form>
 		);
 	}
