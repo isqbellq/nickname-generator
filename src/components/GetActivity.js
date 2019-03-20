@@ -18,9 +18,13 @@ class GetActivity extends Component {
     }
 
 	render() {
+
+		let time = this.state.end - this.state.start;
+
 		return (
 			<form
-			    onSubmit={this.props.handleSubmit}>
+			    onSubmit={this.props.handleSubmit}
+			>
 			    <input 
 			        type="text"
 			        name="start"

@@ -13,11 +13,11 @@ class App extends Component {
   }
 
   handleSubmit = (e) => {
-    this.setState({
-      duration: [45, 55],
-      activities: ["hmm", "k"]
-      });
     e.preventDefault();
+    this.setState(prevState => {
+      prevState.duration.push(666);
+      prevState.activities.push("hmm");     
+    });    
   }
 
   render() {
