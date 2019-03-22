@@ -10,20 +10,24 @@ class GetActivity extends Component {
     	}
     }
 
-    handleChange = (e) => {
-    	const { name, value } = e.target;
+    handleChange = (event) => {
+    	const { name, value } = event.target;
     	this.setState({
     		[name]: value
     	});
     }
 
+
+    submit = () => {
+    	let time = this.state.end - this.state.start;
+    	let activity = this.props.activity;
+    	this.props.handleSubmit(time, activity);
+    }
+
 	render() {
-
-		let time = this.state.end - this.state.start;
-
 		return (
 			<form
-			    onSubmit={this.props.handleSubmit}
+			    onSubmit={this.props.submit}
 			>
 			    <input 
 			        type="text"
