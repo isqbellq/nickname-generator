@@ -12,10 +12,12 @@ class App extends Component {
     }
   }
 
-  handleSubmit = (time, activity) => {    
+  handleSubmit = (e) => {
+    e.preventDefault();
+    alert("hi");  
     this.setState(prevState => {
-      prevState.duration.push(time);
-      prevState.activities.push(activity);     
+      prevState.duration.push(2);
+      prevState.activities.push("activity");     
     }); 
   }
 
@@ -24,7 +26,7 @@ class App extends Component {
       <div className="App">
           <h1>Time tracker</h1>
           <GetActivity 
-            handleSubmit={e => { e.preventDefault(); this.handleSubmit(time, activity)} }
+            handleSubmit={this.handleSubmit}
           />
           <Activities 
             duration={this.state.duration}

@@ -18,16 +18,16 @@ class GetActivity extends Component {
     }
 
 
-    submit = () => {
-    	let time = this.state.end - this.state.start;
-    	let activity = this.props.activity;
-    	this.props.handleSubmit(time, activity);
-    }
+    // submit = () => {
+    // 	let time = 50;
+    // 	let activity = "abc";
+    // 	this.props.handleSubmit(time, activity);
+    // }
 
 	render() {
 		return (
 			<form
-			    onSubmit={this.props.submit}
+			    onSubmit={this.props.handleSubmit}
 			>
 			    <input 
 			        type="text"
