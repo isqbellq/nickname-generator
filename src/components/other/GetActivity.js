@@ -19,8 +19,8 @@ class GetActivity extends Component {
 
 
     // submit = () => {
-    // 	let time = 50;
-    // 	let activity = "abc";
+    // 	let time = this.state.end - this.state.start;
+    // 	let activity = this.state.activity;
     // 	this.props.handleSubmit(time, activity);
     // }
 
