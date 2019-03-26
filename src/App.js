@@ -6,7 +6,7 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			adjs: ["green", "vegan", "happy"],
+			adjs: [],
 			nouns: [],
 			nickAdj: "",
 			nickNoun: "",
@@ -30,11 +30,11 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch("https://raw.githubusercontent.com/baliw/words/master/adjectives.json")
+		fetch("https://raw.githubusercontent.com/dariusk/corpora/master/data/words/adjs.json")
 		.then(response => response.json())
 		.then(data => {
 			this.setState({
-				adjs: data
+				adjs: data.adjs
 			});
 		});
 
