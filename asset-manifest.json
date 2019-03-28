@@ -1,13 +1,13 @@
 {
-  "main.css": "/sample-react-app/static/css/main.b6731569.chunk.css",
-  "main.js": "/sample-react-app/static/js/main.256b96c1.chunk.js",
-  "main.js.map": "/sample-react-app/static/js/main.256b96c1.chunk.js.map",
-  "runtime~main.js": "/sample-react-app/static/js/runtime~main.dd6b59ae.js",
-  "runtime~main.js.map": "/sample-react-app/static/js/runtime~main.dd6b59ae.js.map",
-  "static/js/2.5ec21d73.chunk.js": "/sample-react-app/static/js/2.5ec21d73.chunk.js",
-  "static/js/2.5ec21d73.chunk.js.map": "/sample-react-app/static/js/2.5ec21d73.chunk.js.map",
-  "index.html": "/sample-react-app/index.html",
-  "precache-manifest.02fef50ae82e46923e1739e36aab9643.js": "/sample-react-app/precache-manifest.02fef50ae82e46923e1739e36aab9643.js",
-  "service-worker.js": "/sample-react-app/service-worker.js",
-  "static/css/main.b6731569.chunk.css.map": "/sample-react-app/static/css/main.b6731569.chunk.css.map"
+  "main.css": "/nickname-generator/static/css/main.48416024.chunk.css",
+  "main.js": "/nickname-generator/static/js/main.33d4ebac.chunk.js",
+  "main.js.map": "/nickname-generator/static/js/main.33d4ebac.chunk.js.map",
+  "runtime~main.js": "/nickname-generator/static/js/runtime~main.3235c2fe.js",
+  "runtime~main.js.map": "/nickname-generator/static/js/runtime~main.3235c2fe.js.map",
+  "static/js/2.5ec21d73.chunk.js": "/nickname-generator/static/js/2.5ec21d73.chunk.js",
+  "static/js/2.5ec21d73.chunk.js.map": "/nickname-generator/static/js/2.5ec21d73.chunk.js.map",
+  "index.html": "/nickname-generator/index.html",
+  "precache-manifest.b9e2de6db80ddadcc8eb49d45d45b5f3.js": "/nickname-generator/precache-manifest.b9e2de6db80ddadcc8eb49d45d45b5f3.js",
+  "service-worker.js": "/nickname-generator/service-worker.js",
+  "static/css/main.48416024.chunk.css.map": "/nickname-generator/static/css/main.48416024.chunk.css.map"
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sample-react-app/precache-manifest.02fef50ae82e46923e1739e36aab9643.js"
+  "/nickname-generator/precache-manifest.b9e2de6db80ddadcc8eb49d45d45b5f3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/sample-react-app/index.html", {
+workbox.routing.registerNavigationRoute("/nickname-generator/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
